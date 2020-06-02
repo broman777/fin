@@ -1,0 +1,19 @@
+.heading {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  color: $space;
+}
+.form-centered {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: $mobRes) {
+    .heading {
+      font-size: 24px;
+    }
+}

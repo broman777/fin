@@ -1,0 +1,80 @@
+$mobMax: 840px;
+.mob {display: none;}
+@media screen and (max-width: $mobMax) {
+    .box {
+        padding: 0 20px;
+    }
+    .dt {
+        display: none;
+    }
+    .mob {
+        display: block;
+    }
+    .heading {
+        font-size: 24px;
+    }
+    .radiogroup_title {
+      margin-bottom: 12px;
+    }
+    .form-group {
+      min-height: 32px;
+      transition: 0.2s ease;
+      .msg {
+        position: relative;
+        top: auto;
+        width: 100%;
+        overflow: hidden;
+      }
+      .multiselect {
+        &__input,
+        &__single {
+          font-size: 13px;
+          padding-bottom: 2px;
+        }
+        &__select {
+          top: 14px;
+          right: -10px;
+        }
+      }
+      &.error .msg_error {
+        top: 44px;
+        padding-top: 6px;
+      }
+      &.success .msg_success {
+        padding-top: 6px;
+      }
+      &.error,
+      &.success {
+        .focus-border {
+          display: none!important;
+        }
+      }
+      div.hint {
+        top: auto;
+        position: relative;
+      }
+      input[type=text], input[type=password], input[type=email], input[type=tel] {
+        padding: 2px 0;
+         ~ label {
+          top: 15px;
+        }
+        &:focus ~ label {
+          top: 0;
+        }
+        &.has-content ~ label {
+          top: 0;
+        }
+      }
+    }
+    .page {
+      &.authorization,
+      &__password-change {
+        .form-group {
+          margin-bottom: 12px;
+        }
+      }
+      &__offers {
+        padding: 14px 0;
+      }
+    }
+}

@@ -1,0 +1,235 @@
+$sprite: (
+	back-arrow_hover: (
+		offset-x: -86px,
+		offset-y: -38px,
+		width: 16px,
+		height: 16px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	back-arrow: (
+		offset-x: -54px,
+		offset-y: -62px,
+		width: 16px,
+		height: 16px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	date: (
+		offset-x: -104px,
+		offset-y: -38px,
+		width: 16px,
+		height: 16px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	edit: (
+		offset-x: -36px,
+		offset-y: -62px,
+		width: 16px,
+		height: 16px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	gift: (
+		offset-x: -68px,
+		offset-y: -38px,
+		width: 16px,
+		height: 16px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	logo: (
+		offset-x: 0px,
+		offset-y: 0px,
+		width: 127px,
+		height: 36px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	logout: (
+		offset-x: 0px,
+		offset-y: -38px,
+		width: 29px,
+		height: 22px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	multiselect-arrow_error: (
+		offset-x: -60px,
+		offset-y: -80px,
+		width: 10px,
+		height: 7px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	multiselect-arrow_hover: (
+		offset-x: -48px,
+		offset-y: -80px,
+		width: 10px,
+		height: 7px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	multiselect-arrow_static: (
+		offset-x: -36px,
+		offset-y: -80px,
+		width: 10px,
+		height: 7px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	search-rose: (
+		offset-x: -50px,
+		offset-y: -38px,
+		width: 16px,
+		height: 16px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	show-hide-ico_active: (
+		offset-x: 0px,
+		offset-y: -80px,
+		width: 16px,
+		height: 11px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	show-hide-ico: (
+		offset-x: -18px,
+		offset-y: -80px,
+		width: 16px,
+		height: 11px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	soc-fb: (
+		offset-x: 0px,
+		offset-y: -93px,
+		width: 8px,
+		height: 16px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	soc-in: (
+		offset-x: -31px,
+		offset-y: -38px,
+		width: 17px,
+		height: 16px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	soc-li: (
+		offset-x: -18px,
+		offset-y: -62px,
+		width: 16px,
+		height: 16px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	soc-tw: (
+		offset-x: -90px,
+		offset-y: -62px,
+		width: 16px,
+		height: 13px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	soc-vk: (
+		offset-x: 0px,
+		offset-y: -62px,
+		width: 16px,
+		height: 16px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	soc-yt: (
+		offset-x: -108px,
+		offset-y: -62px,
+		width: 16px,
+		height: 12px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+	toggle: (
+		offset-x: -72px,
+		offset-y: -62px,
+		width: 16px,
+		height: 16px,
+		total-width: 127px,
+		total-height: 109px,
+		image: '~assets/img/spr.png'
+	),
+);
+
+
+@mixin sprite-size($image) {
+	background-size: map-get(map-get($sprite, $image), 'total-width') map-get(map-get($sprite, $image), 'total-height');
+}
+
+@mixin sprite-width($image) {
+	width: map-get(map-get($sprite, $image), 'width');
+}
+
+@mixin sprite-height($image) {
+	height: map-get(map-get($sprite, $image), 'height');
+}
+
+@mixin sprite-position($image) {
+	background-position: map-get(map-get($sprite, $image), 'offset-x') map-get(map-get($sprite, $image), 'offset-y');
+}
+
+@mixin sprite-image($image) {
+	background-image: url(map-get(map-get($sprite, $image), 'image'));
+}
+
+@mixin sprite-image-retina($image) {
+	$image-path: map-get(map-get($sprite, $image), 'image');
+	$image-path-retina: str-slice($image-path, 1, str-index($image-path, '.png') - 1) + '@2x.png';
+
+	background-image: url($image-path-retina);
+}
+
+@mixin sprite($image, $size: true) {
+	@include sprite-image($image);
+	@include sprite-position($image);
+	background-repeat: no-repeat;
+
+	@if $size {
+		@include sprite-width($image);
+		@include sprite-height($image);
+	}
+
+	@media
+		only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (   min--moz-device-pixel-ratio: 2),
+		only screen and (     -o-min-device-pixel-ratio: 2/1),
+		only screen and (        min-device-pixel-ratio: 2),
+		only screen and (                min-resolution: 192dpi),
+		only screen and (                min-resolution: 2dppx) {
+
+		@include sprite-size($image);
+		@include sprite-image-retina($image);
+
+	}
+}
+

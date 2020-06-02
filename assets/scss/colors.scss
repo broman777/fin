@@ -1,0 +1,38 @@
+//  main colors
+$space: #2e363e;
+$bali: #8898ac;
+$radical: #ff2777;
+$radical-h: #dc266c;
+$ribon: #004af1;
+
+//  separators
+$selago: #f4f7fe;
+$mystic: #e4e8f0;
+$geyser: #cad3df;
+
+//  backgrounds
+$lavender: #fff4f8;
+$zumor: #eff6ff;
+$lilac: #eff1f8;
+$white-lilac: #edf0f8;
+
+//  technical
+$error: #ef3c39;
+$success: #87c916;
+$warning: #f1b02c;
+
+//  gradient mixin
+@mixin gradient( $deg, $color1, $color2 ) {
+  background-image: linear-gradient( $deg, $color1, $color2 );
+  background-image: -moz-linear-gradient( $deg, $color1, $color2 );
+  background-image: -webkit-linear-gradient( $deg, $color1, $color2 );
+  background-image: -ms-linear-gradient( $deg, $color1, $color2 );
+}
+
+//sizes
+$font: "Montserrat", sans-serif;
+$mobRes: 840px;
+
+//DatePicker
+$default-color: #2e363e;
+$primary-color: #ff2777;
